@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/backgroundCard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundCard">
+
+
+        <TextView
+            android:id="@+id/reservation_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="date" />
+
+        <TextView
+            android:id="@+id/reservation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reservation_date"
+            tools:text="name" />
+
+        <TextView
+            android:id="@+id/reservation_no_of_people"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reservation_name"
+            tools:text="number of people" />
+
+        <TextView
+            android:id="@+id/reservation_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="#F44336"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reservation_no_of_people"
+            tools:text="status" />
+
+
+        <Button
+            android:id="@+id/buttonConfirmReservation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/reservation_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Confirm"
+            android:padding="8dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@color/buttonText"
+            />
+
+
+            <Button
+                android:id="@+id/buttonRejectReservation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonConfirmReservation"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Reject"
+                android:padding="8dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/buttonText"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

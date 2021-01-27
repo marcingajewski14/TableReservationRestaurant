@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "705228923112",
+    "firebase_url": "https://table-assistant-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "table-assistant",
+    "storage_bucket": "table-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705228923112:android:c9a598ff88b955c88de95d",
+        "android_client_info": {
+          "package_name": "com.example.tableassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705228923112-s93buavb66b3tam3g3i7ipqdlf9tiddu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA77xP33s6DVU6pF6S4-xcbAsObXpThOIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705228923112-s93buavb66b3tam3g3i7ipqdlf9tiddu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705228923112:android:e792f087fbe71a328de95d",
+        "android_client_info": {
+          "package_name": "com.example.tableassistant_restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705228923112-s93buavb66b3tam3g3i7ipqdlf9tiddu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA77xP33s6DVU6pF6S4-xcbAsObXpThOIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705228923112-s93buavb66b3tam3g3i7ipqdlf9tiddu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

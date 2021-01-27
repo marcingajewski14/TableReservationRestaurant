@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateRestaurant"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Welcome to Table Assistant"
+        tools:text="welcome" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        android:text="Please, provide your restaurant's data and we will help you with managing reservations from your clients."
+        tools:text="description" />
+
+    <EditText
+        android:id="@+id/restaurant_provide_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide your name of your restaurant"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:text="name"
+        />
+
+    <EditText
+        android:id="@+id/restaurant_provide_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide country"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_provide_name"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:text="country"
+        />
+
+    <EditText
+        android:id="@+id/restaurant_provide_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide city"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_provide_country"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:text="city"
+        />
+
+    <EditText
+        android:id="@+id/restaurant_provide_postal_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide postal code"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_provide_city"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:text="postal"
+        />
+
+    <EditText
+        android:id="@+id/restaurant_provide_street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide street name"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_provide_postal_code"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        tools:text="street"
+        />
+
+
+    <EditText
+        android:id="@+id/restaurant_provide_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide adress"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_provide_street"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        tools:text="number"
+        />
+
+    <EditText
+        android:id="@+id/restaurant_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide type of restaurant"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_provide_number"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        tools:text="number"
+        />
+
+    <EditText
+        android:id="@+id/restaurant_working_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provide working hours"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_type"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        tools:text="working hours"
+        />
+
+    <EditText
+        android:id="@+id/restaurant_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Provide restaurant's description"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_working_hours"
+        tools:text="restaurant_description" />
+
+
+    <Button
+        android:id="@+id/buttonCreateRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Create Restaurant"
+        android:textSize="18sp"
+        android:textColor="@color/buttonText"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
